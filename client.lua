@@ -28,11 +28,11 @@ end)
 Citizen.CreateThread(function()
 	while true do
 
-Citizen.Wait(1)
+	Wait(1)
 
-        if PlayerData.job ~= nil and PlayerData.job.name == Config.Job then
+	if PlayerData.job ~= nil and PlayerData.job.name == Config.Job then
  
-            local playerPed = PlayerPedId()
+        local playerPed = PlayerPedId()
 	    local coords = GetEntityCoords(playerPed)
 	    local vehicle = GetVehiclePedIsIn(playerPed, false)
 
@@ -41,9 +41,9 @@ Citizen.Wait(1)
 		DrawMarker(auta.Blip, auta.Lokalizacje.x, auta.Lokalizacje.y, auta.Lokalizacje.z, 0.0, 0.0, 0.0, 0, 0.0, 0.0, 1.5, 1.5, 1.5, 255, 0, 0, 100, false, true, 2, false, false, false, false)
        	
 
-                if GetDistanceBetweenCoords(coords, Przebieralnie.Lokalizacje.x, Przebieralnie.Lokalizacje.y, Przebieralnie.Lokalizacje.z, true) < 2.0 then
-                    	ESX.ShowHelpNotification('Kliknij ~INPUT_CONTEXT~ aby otworzyć menu ubran!', false, false, 10)
-                	if IsControlJustReleased(0, Keys['E']) then
+        if GetDistanceBetweenCoords(coords, Przebieralnie.Lokalizacje.x, Przebieralnie.Lokalizacje.y, Przebieralnie.Lokalizacje.z, true) < 2.0 then
+			ESX.ShowHelpNotification('Kliknij ~INPUT_CONTEXT~ aby otworzyć menu ubran!', false, false, 10)
+            if IsControlJustReleased(0, Keys['E']) then
 				UbraniaMenu()
 			end
 		end
