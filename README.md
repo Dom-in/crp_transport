@@ -1,13 +1,19 @@
 ## CRP_TRANSPORT
 
-To jest autorski skrypt na prace transportera praca jest pod joba policji ale można zmienić.
+[![Discord](https://img.shields.io/discord/902138867199643679?color=7289da&label=Discord&logo=discord&logoColor=ffffff)](https://discord.gg/hpYRxZ2KrF)
 
-Job Posiada
+This script is made by me its for my own fivem server but decided to release it.
+
+Job has:
 - Boss Menu
-- Zmiana Ubrań
-- Wyciąganie Aut
-- Usuwanie Aut
+- Cloaths Change
+- Taking Out Cars
+- Deleteing Cars
 
-## Jeżeli macie jakie kolwiek pytania piszcie DM!
-- Discord: Dominik#6969
-- Discord CayRP: https://discord.gg/zgsVfRF9hQ
+### Installation Guide
+1. Clone the repository or download the [latest version](../../releases/latest).
+2. Insert sql to you're database
+3. Place script inside your server's `resources` directory.
+4. Start script in server.cfg `start crp_transport`.
+5. Change Stuff In Config.
+6. Enjoy!
